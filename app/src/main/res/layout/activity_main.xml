@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:id="@+id/main_vp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+</android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/main_gp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:id="@+id/main_rbtn_home"
+            android:checked="true"
+            android:drawableTop="@drawable/secect1"
+            android:text="首页"
+            android:button="@null"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/main_rbtn_listen"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/secect2"
+            android:layout_weight="1"
+            android:text="我听"
+            android:button="@null"/>
+
+        <RadioButton
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/find"
+            android:drawableTop="@drawable/secect3"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="发现"
+            android:button="@null"/>
+        <RadioButton
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_rbtn_me"
+            android:drawableTop="@drawable/secect4"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="我"
+            android:button="@null"/>
+
+    </RadioGroup>
+</LinearLayout>
